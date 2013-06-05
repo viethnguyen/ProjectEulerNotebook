@@ -6,4 +6,5 @@ Problem 5: 232792560
 Problem 6: 25164150
 Problem 7: 104743
 Problem 8: 40824
+Problem 9: 31875000
 Problem 10: 142913828922
