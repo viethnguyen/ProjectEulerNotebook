@@ -7,7 +7,7 @@ public class AnswerUtilities {
 	private final static String answerFileName = "Answer.txt";
 	private final static String tmpFileName = "_Answer.txt";
 	
-	public static void writeAnswer(int probId, int answer)
+	public static void writeAnswer(int probId, String answer)
 	{	
 		try
 		{	
@@ -74,6 +74,7 @@ public class AnswerUtilities {
 					{
 						//insert
 						printAnswer(out, probId, answer);
+						out.println(line);
 						isInserted = true;
 					}
 					else 
@@ -117,7 +118,7 @@ public class AnswerUtilities {
 		}
 	}
 	
-	private static void printAnswer(PrintWriter out, int probId, int answer )
+	private static void printAnswer(PrintWriter out, int probId, String answer )
 	{
 		out.println("Problem " + probId + ": " + answer);
 	}

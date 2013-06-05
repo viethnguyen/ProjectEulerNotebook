@@ -22,7 +22,7 @@ public class p002 extends EulerSolution{
 			currTerm = term1 + term2; 
 		}
 		probAns = sum;
-		AnswerUtilities.writeAnswer(probId, probAns);
+		AnswerUtilities.writeAnswer(probId, String.valueOf(probAns));
 	}
 	
 	

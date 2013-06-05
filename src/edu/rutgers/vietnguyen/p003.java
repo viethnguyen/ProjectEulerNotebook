@@ -14,7 +14,7 @@ public final class p003  extends EulerSolution{
 		//probAns = largestPrimeFactor(Long.parseLong("600851475143"));
 		probAns = largestPrimeFactor_v2(Long.parseLong("600851475143"));
 		System.out.println(probAns);
-		AnswerUtilities.writeAnswer(probId, probAns);
+		AnswerUtilities.writeAnswer(probId, String.valueOf(probAns));
 	}
 
 	//Version 2: run faster ! 

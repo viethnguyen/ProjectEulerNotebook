@@ -16,7 +16,7 @@ public final class p001 extends EulerSolution{
 			}
 		}
 		probAns = sum;
-		AnswerUtilities.writeAnswer(probId, probAns);
+		AnswerUtilities.writeAnswer(probId, String.valueOf(probAns));
 	}
 	
 }

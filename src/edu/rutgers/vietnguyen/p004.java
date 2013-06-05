@@ -25,7 +25,7 @@ public final class p004 extends EulerSolution {
 		System.out.println(factor1);
 		System.out.println(factor2);
 		
-		AnswerUtilities.writeAnswer(probId, probAns);
+		AnswerUtilities.writeAnswer(probId, String.valueOf(probAns));
 	}
 	
 	/**

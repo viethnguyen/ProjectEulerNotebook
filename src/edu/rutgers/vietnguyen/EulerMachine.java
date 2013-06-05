@@ -7,7 +7,7 @@ public class EulerMachine {
 	 * ALL START HERE!! 
 	 */
 	public static void main(String[] args) {
-		new p004().run();
+		new p010().run();
 	}
 
 }
