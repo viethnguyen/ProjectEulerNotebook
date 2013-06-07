@@ -1,7 +1,9 @@
 package edu.rutgers.vietnguyen;
 
 import java.util.BitSet;
+import java.util.HashMap;
 import java.util.Iterator;
+import java.util.Map;
 import java.util.Set;
 import java.util.TreeSet;
 
@@ -61,5 +63,63 @@ public class EulerLibrary {
 			i++;
 		}
 		return b;
+	}
+	
+	/**
+	 * Find prime factors of a number, together with their frequencies
+	 * @param num
+	 * @return a map with a key is a prime, a value is its frequency
+	 */
+	public static Map<Integer,Integer> primeFactors(int num)
+	{
+		Map<Integer,Integer> listPrime = new HashMap<Integer,Integer>();
+		int count = 0;
+		int factor; 
+		if(num % 2 == 0)
+		{
+			count = 1;
+			num = num / 2;
+			while(num % 2 == 0)
+			{
+				count ++;
+				num = num / 2;
+			}
+			listPrime.put(2, count);
+		}
+		factor = 3;
+		while(factor <= num)
+		{
+			if( num % factor == 0)
+			{
+				count = 1;
+				num = num / factor;
+				while(num % factor == 0)
+				{
+					count ++;
+					num = num / factor;
+				}
+				listPrime.put(factor,count);
+			}
+			factor += 2;
+		}
+		return listPrime;
+	}
+	
+	/**
+	 * Return number of divisors of a number
+	 * @param num
+	 * @return number of divisors
+	 */
+	
+	public static int numDivisors(int num)
+	{
+		int res = 1;
+		Map<Integer, Integer> lstPrime = primeFactors(num);
+		for(Map.Entry<Integer, Integer> entry : lstPrime.entrySet())
+		{
+			int freq = entry.getValue();
+			res *= (freq + 1);
+		}
+		return res;
 	}
 }

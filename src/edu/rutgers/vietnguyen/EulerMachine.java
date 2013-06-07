@@ -7,7 +7,12 @@ public class EulerMachine {
 	 * ALL START HERE!! 
 	 */
 	public static void main(String[] args) {
-		new p009().run();
+		//Test
+		TestEulerLibrary.testPrimeFactors();
+		TestEulerLibrary.testNumDivisors();
+		
+		//run Euler solutions
+		new p013().run();
 	}
 
 }

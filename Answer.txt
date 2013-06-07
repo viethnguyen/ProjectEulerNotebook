@@ -8,3 +8,6 @@ Problem 7: 104743
 Problem 8: 40824
 Problem 9: 31875000
 Problem 10: 142913828922
+Problem 11: 70600674
+Problem 12: 76576500
+Problem 13: 5537376230
