@@ -12,7 +12,7 @@ public class EulerMachine {
 		TestEulerLibrary.testNumDivisors();
 		
 		//run Euler solutions
-		new p013().run();
+		new p067().run();
 	}
 
 }

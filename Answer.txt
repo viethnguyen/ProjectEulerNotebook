@@ -11,3 +11,8 @@ Problem 10: 142913828922
 Problem 11: 70600674
 Problem 12: 76576500
 Problem 13: 5537376230
+Problem 14: 837799
+Problem 15: 137846528820
+Problem 16: 1366
+Problem 18: 1074
+Problem 67: 7273

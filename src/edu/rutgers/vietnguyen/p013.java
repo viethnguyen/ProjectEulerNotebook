@@ -3,7 +3,6 @@ package edu.rutgers.vietnguyen;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.Scanner;
 
 public final class p013 extends EulerSolution {
 	public final int probId = 13;
@@ -21,6 +20,7 @@ public final class p013 extends EulerSolution {
 		}
 		try
 		{
+			long start = System.currentTimeMillis();
 			br = new BufferedReader( new FileReader(inputFilename));
 			String line;
 			while((line = br.readLine())!=null)
@@ -49,7 +49,9 @@ public final class p013 extends EulerSolution {
 			{
 				ans = ans.concat(String.valueOf(tmpSum[index++]));
 			}
+			long end = System.currentTimeMillis();
 			System.out.println("First 10 digits: " + ans);
+			System.out.println("Time: " + (end - start) + " ms");
 			AnswerUtilities.writeAnswer(probId, ans);
 		}
 		catch (IOException ex)
