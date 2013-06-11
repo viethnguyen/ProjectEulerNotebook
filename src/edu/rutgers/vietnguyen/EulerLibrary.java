@@ -122,4 +122,19 @@ public class EulerLibrary {
 		}
 		return res;
 	}
+	
+	/**
+	 * Find the sum of proper divisors of n (number less than n which divide evenly into n)
+	 */
+	public static int sumDivisors(int n)
+	{
+		int sum = 0;
+		for(int i = 1; i < n; i++)
+		{
+			if(n%i == 0)
+				sum += i;
+	
+		}
+		return sum;
+	}
 }

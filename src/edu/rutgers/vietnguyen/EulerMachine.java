@@ -10,9 +10,10 @@ public class EulerMachine {
 		//Test
 		TestEulerLibrary.testPrimeFactors();
 		TestEulerLibrary.testNumDivisors();
+		TestEulerLibrary.testSumDivisors();
 		
 		//run Euler solutions
-		new p067().run();
+		new p020().run();
 	}
 
 }
